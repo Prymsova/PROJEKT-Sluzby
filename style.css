@@ -1,0 +1,115 @@
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #8B8B8B;
+    background-color: #FAFAFA;
+}
+
+p {
+    margin: 0;
+}
+
+/*minimum možné pro vnitřek 265px, aby se nerozhodila tlačítka*/
+
+h1 {
+    font-size: 28px;
+    font-weight: 500;
+    color: black;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+}
+
+.obr-cestovatel {
+    width: 100%;
+    max-width: 425px;
+}
+
+.hlavička,
+.kancelář {
+    margin-bottom: 80px;
+}
+
+.tlacitko a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    border-radius: 25px;
+    padding: 10px 30px;
+}
+
+.dobrodruzstvi a {
+    background-color: #407BFF;
+}
+
+.pohoda a {
+    background-color: #8B8B8B;
+}
+
+.hlavička .text {
+    margin: 0 0 30px 0;
+}
+
+.rámeček {
+    background-color: white;
+    box-shadow: 5px 5px 10px lightgrey;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/*----------------------------------------------
+vlastnosti, které se asi budou v průběhu měnit*/
+body {
+    margin: 0;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0 0 40px 0;
+}
+h2 {
+    margin: 0 0 15px 0;
+}
+
+.logo {
+    margin-bottom: 40px;
+}
+
+/*těch 10px nahoře je kvůli tomu, aby něco nezasáhlo do podbarvení tlačítka, kde a href má padding 10px nahoře dole*/
+.dobrodruzstvi {
+    margin: 10px 0 30px 0;
+}
+/*pojistka, aby něco nezasáhlo do toho pole tlačítka (a href má padding 10px nahoře dole*/
+.pohoda {
+    margin: 10px 0 10px 0;
+}
+
+/*v tablet a komp verzi bude 40px, pozor že se vztahuje i na text v rámečku s ikonou*/
+.část-text .text {
+    margin: 0 0 30px 0;
+}
+
+.rámeček {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+/*řešit marginem?*/
+.ikona {
+    margin-right: 20px;
+}
+
+/*text uvnitř rámečku s ikonou stejná barva i weight jako běžný text v body, ale velikost bude 13px namísto 16px*/
+
+/*primární modrá: #407BFF*/
+/*vnitřní pruh s obsahem bude max 1040px a vycentrovaný uprostřed stránky*/
