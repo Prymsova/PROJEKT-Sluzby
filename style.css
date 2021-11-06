@@ -7,13 +7,13 @@ body {
     font-weight: 300;
     color: #8B8B8B;
     background-color: #FAFAFA;
+    min-width: 265px;
 }
+/*minimum možné pro vnitřek 265px, aby se nerozhodila tlačítka*/
 
 p {
     margin: 0;
 }
-
-/*minimum možné pro vnitřek 265px, aby se nerozhodila tlačítka*/
 
 h1 {
     font-size: 28px;
@@ -62,7 +62,7 @@ h2 {
     background-color: white;
     box-shadow: 5px 5px 10px lightgrey;
     border-radius: 10px;
-    padding: 20px;
+    font-size: 13px;
 }
 
 /*----------------------------------------------
@@ -102,6 +102,7 @@ h2 {
     display: flex;
     align-items: center;
     margin-bottom: 25px;
+    padding: 20px;
 }
 
 /*řešit marginem?*/
@@ -109,7 +110,57 @@ h2 {
     margin-right: 20px;
 }
 
-/*text uvnitř rámečku s ikonou stejná barva i weight jako běžný text v body, ale velikost bude 13px namísto 16px*/
 
-/*primární modrá: #407BFF*/
-/*vnitřní pruh s obsahem bude max 1040px a vycentrovaný uprostřed stránky*/
+@media screen and (min-width: 640px) {
+    .logo {
+        margin-bottom: 30px;
+    }
+
+    .část-text .text {
+        margin: 0 0 40px 0;
+    }
+
+    .část-text {
+        max-width: 550px;
+        margin: 0 auto;
+    }
+
+    .tlacitka {
+        display: flex;
+        justify-content: center;
+    }
+
+/*bude vyřešeno jinak než marginem?*/
+    .dobrodruzstvi {
+        margin: 10px 20px 10px 0;
+    }
+
+    .část-ikony {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .rámeček {
+        flex: 0 0 calc((100%-40px)/3);
+        flex-direction: column;
+        margin-bottom: 0;
+        margin-right: 20px;
+        padding: 40px 15px;
+    }
+
+    .ikona {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+
+}
+
+
+@media screen and (min-width: 1100px) {
+    body {
+        max-width: 1040px;
+        margin: 0 auto;
+    }
+
+    
+}
